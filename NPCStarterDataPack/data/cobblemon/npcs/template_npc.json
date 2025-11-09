@@ -1,0 +1,23 @@
+{
+  "resourceIdentifier": "cobblemon:global",
+  "hitbox": "player",
+  "canDespawn": false,
+  "isMovable": false,
+  "isInvulnerable": true,
+  "isLeashable": false,
+  "allowProjectileHits": false,
+  "names": [
+    "Template NPC"
+  ],
+  "ai": [
+    {
+      "type": "apply_behaviours",
+      "behaviours": [
+        "cobblemon:core",
+        "cobblemon:looking",
+        "cobblemon:looks_in_one_direction",
+        "cobblemon:chatter"
+      ]
+    }
+  ]
+}
