@@ -6,17 +6,31 @@
   "isInvulnerable": true,
   "isLeashable": false,
   "allowProjectileHits": false,
+  "battleConfiguration": {
+    "canChallenge": true
+  },
   "names": [
-    "Template NPC"
+    "Template Battle NPC"
   ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:battle_interaction"
+  },
   "ai": [
     {
       "type": "apply_behaviours",
       "behaviours": [
         "cobblemon:core",
         "cobblemon:looks_in_one_direction",
-        "cobblemon:chatter"
+        "cobblemon:looking",
+        "cobblemon:party_configuration"
       ]
+    },
+    {
+      "type": "set_variables",
+      "variableValues": {
+        "npc_party_pokemon1": "bidoof lvl=10"
+      }
     }
   ]
 }
