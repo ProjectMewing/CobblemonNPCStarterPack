@@ -1,0 +1,31 @@
+{
+    "portraitScale": 2.3,
+    "portraitTranslation": [0.0, 1.1, 0.0],
+    "profileScale": 1.0,
+    "profileTranslation": [0.0, -0.5, 0.0],
+    "animations": {
+        "win": "q.bedrock_primary('generic_npc', 'win', q.curve('symmetrical_wide'))",
+        "lose": "q.bedrock_primary('generic_npc', 'lose', q.curve('symmetrical_wide'))",
+        "send_out": "q.bedrock_primary('generic_npc', 'send_out', q.curve('symmetrical'), q.exclude_labels('look'))",
+        "recall": "q.bedrock_primary('generic_npc', 'send_out', q.curve('symmetrical_wide'), q.exclude_labels('look'))",
+        "punch_left": "q.primary_animation(q.punch('head', 'body', 'arm_left', 'arm_right', false), q.curve('symmetrical_wide'), q.exclude_labels('look'))",
+        "punch_right": "q.primary_animation(q.punch('head', 'body', 'arm_right', 'arm_left', true), q.curve('symmetrical_wide'), q.exclude_labels('look'))",
+        "sitting": "q.bedrock_stateful('generic_npc', 'sitting')"
+    },
+    "poses": {
+        "standing": {
+            "poseTypes": ["STAND", "WALK", "FLOAT", "SWIM", "PORTRAIT", "PROFILE"],
+            "animations": [
+            "q.look('head')",
+            "q.bedrock('generic_npc', 'idle')",
+            "q.biped_walk(0.6, 1.4, 'leg_left', 'leg_right')",
+            "q.biped_walk(-0.6, -1.4, 'arm_left', 'arm_right')",
+            {
+                "condition": "q.has_aspect('sitting')",
+                "animation": "q.bedrock('generic_npc', 'sitting')"
+            }
+            ],
+            "quirks": ["q.bedrock_quirk('generic_npc', 'blink')"]
+        }
+    }
+}
