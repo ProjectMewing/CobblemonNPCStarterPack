@@ -1,0 +1,42 @@
+{
+  "name": "cobblemon:template_npc",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["youngster", "male"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngster_male.png",
+      "layers": []
+    },
+    {
+      "aspects": ["youngster", "male", "native"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngsternative_male.png",
+      "layers": []
+    },
+    {
+      "aspects": ["youngster", "male", "snow"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngster_snow_male.png",
+      "layers": []
+    },
+    {
+      "aspects": ["youngster", "female"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngster_female.png",
+      "layers": []
+    },
+    {
+      "aspects": ["youngster", "female", "native"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngsternative_female.png",
+      "layers": []
+    },
+    {
+      "aspects": ["youngster", "female", "snow"],
+      "model": "cobblemon:youngster.geo",
+      "texture": "cobblemon:textures/npcs/youngster/youngster_snow_female.png",
+      "layers": []
+    }
+  ]
+}
