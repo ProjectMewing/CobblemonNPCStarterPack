@@ -1,4 +1,1 @@
-v.player = c.player;
-q.set_query('player', c.player);
-v.pokemon_name = q.to_lower(c.pokemon.species.name);
-q.player.tell('§aCongrats on catching §6' + c.pokemon.species.name + '!§r');
+c.player.tell('§aCongrats on catching §6' + c.pokemon.species.name + '!§r');
