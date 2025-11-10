@@ -29,7 +29,7 @@
     {
       "type": "set_variables",
       "variableValues": {
-        "npc_party_pokemon1": "bidoof lvl=10"
+        "npc_party_pokemon1": "'bidoof lvl=10'"
       }
     }
   ]
